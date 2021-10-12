@@ -1,0 +1,19 @@
+<h1>CREATE USER</h1>
+
+<form [formGroup]="formRegister" class="container-register d-flex flex-column justify-content-center">
+    <div class="mx-5 my-4">
+        <label for="inputEmail"> Enter email </label>
+        <input formControlName="email" type="email" class="form-control  text-center" id="inputEmail" placeholder="examples@email.com">
+    </div>
+    <div class="mx-5 my-4">
+        <label for="inputPassword">Enter password</label>
+        <input formControlName="password" type="password" class="form-control text-center" id="inputPassword"
+            placeholder="password">
+    </div>
+    <div class="mx-5 my-4">
+        <label for="inputPasswordAgain"> Enter password again </label>
+        <input formControlName="passwordAgain" type="password" class="form-control text-center" id="inputPasswordAgain"
+            placeholder="password again">
+    </div>
+    <button (click)="registerUser()" class="m-4 btn btn-outline-success"> Register new user </button>
+</form>
